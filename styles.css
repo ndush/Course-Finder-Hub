@@ -1,0 +1,63 @@
+.contact{
+    text-align: right;
+    margin-top: auto;
+}
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+  .navbar-links {
+    color: rgb(217, 23, 23);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-right: 50px;
+    padding-left: 50px;
+    top: 1rem;
+    
+  }
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+  h2 {
+    color: rgb(252, 251, 250);
+    font-size: 25px;
+    margin-left: 70px;
+  }
+  ::placeholder {
+    color: rgb(105, 99, 99);
+    opacity: 1; /* Firefox */
+  }
+  
+
+ /* #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  } */
+
+/* .animals{
+  display: list-item;    
+ }  */
+ .navbar-containerr {
+    margin-top: 200px;
+  }
+ .image {
+    background-size: cover;
+    height: 480px;
+    padding-top: 80px;
+    box-sizing: border-box;
+  }
+  
+  /* .image:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  } */
