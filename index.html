@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>course-finder-hub</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <!-- navbar -->
@@ -18,41 +17,51 @@
         <a href="#home" class="navbar-links"
           ><strong>Course Finder Hub</strong></a
         >
-        <h2>
-          Connecting career education from highschool to university/college
-        </h2>
-        <div class="contact">
-          <a href="#contact-us" class="navbar-links">contact us</a><br />
-          <input
-            id="searchbar"
-            onkeyup="search_program()"
-            type="text"
-            name="search"
-            placeholder="Find courses based on area of interest"
-          />
+        <a href="#footer" class="navbar-links"
+          ><strong>Contact Us</strong></a
+        ><br />
+
+        <div class="search">
+          <h2>
+            <strong
+              >Connecting career education from highschool to
+              university/college</strong
+            >
+          </h2>
+          
         </div>
       </div>
-
-      <ul id="course-list">
-        <li><a href="#">software development</a></li>
-        <li><a href="#">accounting</a></li>
-        <li><a href="#">acturial science</a></li>
-        <li><a href="#">business administration</a></li>
-        <li><a href="#">civil engineering</a></li>
-        <li><a href="#">journalism</a></li>
-        <li><a href="#">economics</a></li>
-        <li><a href="#">criminology</a></li>
-        <li><a href="#">electrical engineering</a></li>
-        <li><a href="#">medicine</a></li>
-        <li><a href="#">enterepreneurship</a></li>
-      </ul>
-
     </div>
-
-    <!-- main-section -->
-    <div></div>
+   
+    <div class="course-filters">
+      <select class="option" id="one">
+        <option value="">AREA OF STUDY</option>
+      </select>
+    </div>
+    <section id="course-card-grid">
+         
+    </section>
 
     <!-- footer-section -->
-    <div></div>
+    
+    <section id="footer">
+      <h3>Contact Us
+      <div class="main-form">
+        <form action="#" id="contacts">
+            <fieldset>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br>
+  
+      <label for="email">Email:</label>
+      <input type="TEXT" id="email" name="email"required><br>
+      <textarea rows="4" cols="50" placeholder="message"required></textarea><br>
+  
+      <input type="submit" value="Submit"><br>
+      
+    </fieldset>
+    </form> 
+    </div>
+    </section>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
