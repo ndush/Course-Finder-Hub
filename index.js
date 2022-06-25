@@ -12,7 +12,11 @@ function render(course) {
   opt.appendChild(content);
   select.appendChild(opt);  
 }
-
+let selectText = (ele) => {
+  let msg = document.getElementById('course-card-grid');
+    msg.innerHTML =  ele.options[ele.selectedIndex].text 
+         
+}
 
 fetch("https://fast-wave-83090.herokuapp.com/courses")
   .then((response) => response.json())
@@ -48,6 +52,7 @@ fetch("https://fast-wave-83090.herokuapp.com/courses")
     document.getElementById("course-card-grid").innerHTML=first
     
   });
+  
 
   
 function validate(){
