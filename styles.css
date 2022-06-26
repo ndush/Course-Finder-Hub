@@ -78,8 +78,7 @@ input[type="text"] {
   transition: width 0.15s ease-in-out;
 }
 
-/* When the input field gets focus,
-       change its width to 100% */
+
 input[type="text"]:focus {
   width: 20%;
 }
@@ -94,7 +93,7 @@ h3{
 }
 ::placeholder {
   color: rgb(105, 99, 99);
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 
 .navbar-containerr {
