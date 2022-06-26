@@ -1,12 +1,47 @@
-.search {
+.header {
   text-align: right;
   margin-top: auto;
   margin-right: 30px;
 }
-#searchbar {
-  margin-left: 15%;
-  padding: 15px;
+#search {
+  margin-left: 75%;
+  padding: 10px;
   border-radius: 10px;
+}
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: .25rem;
+  margin-top: 1rem;
+ text-align: center;
+  
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: .5rem;
+  
+}
+
+.card > .header {
+  margin-bottom: .25rem;
+}
+
+.card > .body {
+  font-size: .8rem;
+  color: rgb(168, 8, 8);
+}
+.card >.image{
+  max-width: 100%;
+}
+.hide {
+  display: none;
 }
 .navbar-links {
   color: rgb(217, 23, 23);
@@ -41,28 +76,15 @@ h3{
   opacity: 1; /* Firefox */
 }
 
-/* #list{
-   font-size:  1.5em;
-   margin-left: 90px;
-  } */
-
-/* .animals{
-  display: list-item;    
- }  */
 .navbar-containerr {
   margin-top: 200px;
 }
-.image {
+.img1 {
   background-size: cover;
   height: 480px;
   padding-top: 80px;
   box-sizing: border-box;
 }
-/* img{
-  height: 250px;
-  padding-top: 80px;
-  ;
-} */
 #course-card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -132,7 +154,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
   }
-  #more {display: none;}
+
   .main-form {
     display: flex;
     justify-content: center;
@@ -145,3 +167,5 @@ h3{
     border-radius: 4px;
     cursor: pointer;
   }
+  
+  

@@ -12,7 +12,7 @@
     <div class="navbar-container">
       <div
         style="background-image: url('pexels-monstera-6238133.jpg')"
-        class="image"
+        class="img1"
       >
         <a href="#home" class="navbar-links"
           ><strong>Course Finder Hub</strong></a
@@ -21,7 +21,7 @@
           ><strong>Contact Us</strong></a
         ><br />
 
-        <div class="search">
+        <div class="header">
           <h2>
             <strong
               >Connecting career education from highschool to
@@ -34,17 +34,34 @@
     </div>
    
     <div class="course-filters">
-     
-     
-    <select class="option" id="sel"  onchange="selectText(this)">
+      <select class="option" id="one">
         <option value="">AREA OF STUDY</option>
       </select>
-    </div>
-    
-    <section id="course-card-grid">
-         
-    </section>
 
+      <!-- <div class="search-wrapper">
+        <input type="search" id="search" placeholder="search" data-search>
+      </div> -->
+      <div class="search-wrapper">
+        <label for="search"></label>
+        <input type="search" id="search"placeholder="search" data-search>
+      </div>
+    </div>
+    <!-- <section id="course-card-grid">
+         
+    </section> -->
+
+    <section>
+      
+      <div class="user-cards" data-user-cards-container></div>
+      <template data-user-template>
+        <div class="card">
+          <img src="" class="image"  image-body>
+          <div class="header" data-header></div>
+          <div class="body" data-body></div>
+          <div class="unit" unit-body></div>
+        </div>
+      </template>
+    </section>
     <!-- footer-section -->
     
     <section id="footer">
