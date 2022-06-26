@@ -1,13 +1,14 @@
 
 document.addEventListener('DOMContentLoaded',() =>{
 
-
 const select = document.querySelector(".option");
 fetch("https://fast-wave-83090.herokuapp.com/courses")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((course) => render(course));
+    
   });
+  
 function render(course) {
   const opt = document.createElement("option");
   opt.value = course.course_type;
@@ -16,12 +17,10 @@ function render(course) {
   select.appendChild(opt);
 }
 
-const userCardTemplate = document.querySelector("[data-user-template]");
-const userCardContainer = document.querySelector("[data-user-cards-container]");
+const courseCardTemplate = document.querySelector("[data-course-template]");
+const courseCardContainer = document.querySelector("[data-course-cards-container]");
 const searchInput = document.querySelector("[data-search]");
-
 let courses = [];
-
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase();
   courses.forEach((course) => {
@@ -32,33 +31,33 @@ searchInput.addEventListener("input", (e) => {
     course.element.classList.toggle("hide", !isVisible);
   });
 });
-
 fetch("https://fast-wave-83090.herokuapp.com/courses")
   .then((res) => res.json())
   .then((data) => {
     courses = data.map((course) => {
-      const card = userCardTemplate.content.cloneNode(true).children[0];
+      const card = courseCardTemplate.content.cloneNode(true).children[0];
       const image = card.querySelector("[image-body]");
       const header = card.querySelector("[data-header]");
       const unit = card.querySelector("[unit-body]");
       const body = card.querySelector("[data-body]");
-
+    
      image.src = course.image_url;
       header.textContent = course.institution;
       unit.textContent = course.course_type;
       body.textContent = course.county;
-
-      userCardContainer.append(card);
+      
+      courseCardContainer.append(card);
       return {
         image_url: course.image_url,
         institution: course.institution,
        course_type: course.course_type,
         county: course.county,
-        element: card,
+        element: card
+        
       };
     });
   });
-
+  
 function validate() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
@@ -100,7 +99,8 @@ function validate() {
 }
 
 let initialize = () => {
-  render();
+  render()
+  click() 
 };
 initialize();
 })

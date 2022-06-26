@@ -1,7 +1,8 @@
 .header {
   text-align: right;
   margin-top: auto;
-  margin-right: 30px;
+  margin-right: 60px;
+  font-size: 15px
 }
 #search {
   margin-left: 75%;
@@ -33,6 +34,11 @@
   padding: .5rem;
   height: 300px;
   
+}
+.card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
 .card > .header {
@@ -100,6 +106,11 @@ h3{
   padding-top: 80px;
   box-sizing: border-box;
 }
+.img1:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
 #course-card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -119,19 +130,9 @@ h3{
 }
 #course-card-grid > article img {
   max-width: 100%;
-  
-  
+   
 }
 
-/* .course-card-grid > article {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-} */
-/* .course-card-grid > article img {
-  max-width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-} */
 .text {
   padding: 0 20px 20px;
 }
