@@ -1,3 +1,7 @@
+
+document.addEventListener('DOMContentLoaded',() =>{
+
+
 const select = document.querySelector(".option");
 fetch("https://fast-wave-83090.herokuapp.com/courses")
   .then((response) => response.json())
@@ -11,41 +15,6 @@ function render(course) {
   opt.appendChild(content);
   select.appendChild(opt);
 }
-
-// fetch("https://fast-wave-83090.herokuapp.com/courses")
-//   .then((response) => response.json())
-//   .then((cardData) => {
-//     let first =""
-
-//     cardData.forEach((values)=>{
-//       first+=`<article>
-//       <img src="${values.image_url}" alt="sample image">
-//       <div class = "text">
-//        <h1 >${values.institution.in1}</h1>
-//        <h4 > ${values.county.cnt1} </h4>
-//        <button>Apply</button>
-//       </div>
-//       </article>`
-//       first+=`<article>
-//       <img src="${values.image_url}" alt="sample image">
-//       <div class = "text">
-//        <h1 >${values.institution.in2}</h1>
-//        <h4 > ${values.county.cnt2} </h4>
-//        <button>Apply</button>
-//       </div>
-//       </article>`
-//       first+=`<article>
-//       <img src="${values.image_url}" alt="sample image">
-//       <div class = "text">
-//        <h1 >${values.institution.in3}</h1>
-//        <h4 > ${values.county.cnt3} </h4>
-//        <button>Apply</button>
-//       </div>
-//       </article>`
-//     })
-//     document.getElementById("course-card-grid").innerHTML=first
-
-//   });
 
 const userCardTemplate = document.querySelector("[data-user-template]");
 const userCardContainer = document.querySelector("[data-user-cards-container]");
@@ -134,3 +103,4 @@ let initialize = () => {
   render();
 };
 initialize();
+})
