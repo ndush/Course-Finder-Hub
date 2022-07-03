@@ -58,24 +58,26 @@
           <div class="header" data-header></div>
           <div class="body" data-body></div>
           <div class="unit" unit-body></div>
-          <button onclick="click()">apply</button>
-
-     
-       
+           <button class="myBtn" btn-body>apply</button> 
+           
+     </div>  
       </template>
+      
     </section>
     <!-- footer-section -->
     
     <section id="footer">
+      
+
       <h3>Contact Us
       <div class="main-form">
-        <form action="#" id="contacts">
+        <form name="contact-form" action="#" id="contacts" onsubmit="alert('Contact Form Submitted Successfully!')">
             <fieldset>
       <label for="name">Name:</label>
       <input type="text" id="name" required><br>
   
       <label for="email">Email:</label>
-      <input type="TEXT" id="email" name="email"required><br>
+      <input type="email" id="email" name="email"required><br>
       <textarea rows="4" cols="50" placeholder="message"required></textarea><br>
   
       <input type="submit" value="Submit"><br>
@@ -86,4 +88,5 @@
     </section>
     
   </body>
+   
 </html>

@@ -40,7 +40,10 @@ fetch("https://fast-wave-83090.herokuapp.com/courses")
       const header = card.querySelector("[data-header]");
       const unit = card.querySelector("[unit-body]");
       const body = card.querySelector("[data-body]");
-    
+      const myBtn = card.querySelector("[btn-body]");
+     myBtn.addEventListener("click",() => {
+       alert("appplication successful")
+     })
      image.src = course.image_url;
       header.textContent = course.institution;
       unit.textContent = course.course_type;
